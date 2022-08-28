@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>{{ post.title }}</h1>
+<br><br>
+<div class="row">
+    <div class="col-md-4">
+        <h5>Создано:</h5>
+        <p>{{ post.created_on }}</p>
+        <h5>Сообщение:</h5>
+        <p>{{ post.body }}</p>
+        <br>
+    </div>
+</div>
+{% endblock %}
